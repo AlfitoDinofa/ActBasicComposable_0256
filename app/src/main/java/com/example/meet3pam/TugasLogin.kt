@@ -114,3 +114,24 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                 fontWeight = FontWeight.Bold
             )
 
+            Spacer(modifier = Modifier.height(20.dp))
+
+            // Box berbentuk lingkaran untuk foto
+            Box(
+                modifier = Modifier
+                    .size(260.dp)
+                    .clip(CircleShape)
+                    .background(Color(0xFFE8E8F4))
+                    .border(width = 3.dp, color = Color.White, shape = CircleShape),
+                contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = foto,
+                    contentDescription = null,
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Crop
+                )
+            }
+        }
+    }
+}
