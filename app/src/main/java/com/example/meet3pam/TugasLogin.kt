@@ -82,3 +82,16 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                     .clip(CircleShape)
                     .background(Color.White),
                 contentAlignment = Alignment.Center
+            ) {
+                Image(
+                    painter = logo,
+                    contentDescription = "Logo Universitas Muhammadiyah Yogyakarta",
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .scale(1.5f),
+                    contentScale = ContentScale.Fit
+                )
+            }
+
+            Spacer(modifier = Modifier.height(48.dp))
+
