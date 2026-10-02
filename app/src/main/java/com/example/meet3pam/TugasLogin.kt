@@ -71,3 +71,14 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
                 text = "Ini adalah halaman login,",
                 color = Color.White,
                 fontSize = 14.sp
+            )
+
+            Spacer(modifier = Modifier.height(40.dp))
+
+            // Logo dibungkus Box berbentuk lingkaran
+            Box(
+                modifier = Modifier
+                    .size(120.dp)
+                    .clip(CircleShape)
+                    .background(Color.White),
+                contentAlignment = Alignment.Center
