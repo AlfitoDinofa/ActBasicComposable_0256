@@ -54,3 +54,15 @@ fun HalamanLogin(modifier: Modifier = Modifier) {
             contentScale = ContentScale.Crop
         )
 
+        // Lapisan 2: konten disusun vertikal dan rata tengah
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(top = 24.dp, bottom = 24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = "Login",
+                color = Color.Blue,
+                fontSize = 28.sp,
+                fontWeight = FontWeight.Bold
